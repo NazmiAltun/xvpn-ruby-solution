@@ -1,0 +1,24 @@
+<h1>Currently published DNS entries</h1>
+<a href='/servers'>Go to Servers</a>
+<br />
+<br />
+<br />
+<br />
+<table class="table table-striped">
+    <thead>
+        <th>Domain String</th>
+        <th>IP</th>
+        <th>Server Friendly Name</th>
+        <th>Cluster Name</th>
+    </thead>
+    <tbody>
+    <% @dns_entries.each do |entry| %>
+    <tr class="<%= 'table-danger' if entry[:server_name] == nil %>">
+    <td><%= entry[:domain] %></td>
+    <td><%= entry[:ip] %></td>
+    <td><%= entry[:server_name] || 'N/A' %></td>
+    <td><%= entry[:cluster_name]  || 'N/A' %></td>
+    </tr>
+    <% end %>
+    </tbody>
+</table>

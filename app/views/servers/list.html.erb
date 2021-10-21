@@ -1,0 +1,29 @@
+<h1>Servers</h1>
+<a href='/dns-entries'>Go to DNS Entries</a>
+<br />
+<br />
+<br />
+<br />
+<table class="table table-striped">
+    <thead>
+        <th>Friendly Name</th>
+        <th>Cluster</th>
+        <th>DNS Status</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+      <% @servers.each do |server| %>
+       <tr>
+    <td><%= server[:name] %></td>
+    <td><%= server[:cluster_name] %></td>
+    <td><%= server[:subdomain] || 'N/A' %></td>
+    <td><%=
+    if server[:subdomain] == nil
+        button_to "Add To Rotation", {:action => 'add_to_rotation', :ip => server[:ip], :cluster_subdomain => server[:cluster_subdomain]}, :method => :put
+    else
+        button_to "Remove From Rotation", {:action => 'remove_from_rotation', id: server[:id]}, :method => :delete
+    end  %></td>
+    </tr>
+    <% end %>
+    </tbody>
+</table>

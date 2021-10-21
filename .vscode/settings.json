@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "yarn.lock": true,
+    "tmp": true,
+    "Gemfile.lock": true
+  }
+}
