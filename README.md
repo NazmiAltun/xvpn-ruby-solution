@@ -1,9 +1,9 @@
-# Automated DNS Management Coding Challenge (July 2020)
+# Automated DNS Management Coding Challenge (Ruby On Rails, July 2020)
 
 A simple automated dns management system to manage hosted zones on Amazon Route53 service. Can add/remove predefined servers
 to subdomain of hosted domain/zone on AWS Route53.It supports only  ipv4 addresses at moment.
 
-It is hosted on Heroku [See it in action](https://xv-coding-challenge-nazmi-a.herokuapp.com/)
+It is hosted on Heroku (Link is removed)
 
 ## How To Run
 Install the latest version of Ruby , Rails and yarn.
