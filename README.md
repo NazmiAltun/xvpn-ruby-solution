@@ -1,4 +1,4 @@
-# xv_coding_challenge_nazmi_a
+# Automated DNS Management Coding Challenge (July 2020)
 
 A simple automated dns management system to manage hosted zones on Amazon Route53 service. Can add/remove predefined servers
 to subdomain of hosted domain/zone on AWS Route53.It supports only  ipv4 addresses at moment.
