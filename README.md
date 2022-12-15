@@ -8,11 +8,6 @@ It is hosted on Heroku (Link is removed)
 ## How To Run
 Install the latest version of Ruby , Rails and yarn.
 
-Clone the repo
-
-```bash
-https://github.com/xvpn-coding-challenges/xv_coding_challenge_nazmi_a.git
-```
 
 Install dependencies
 ```bash
